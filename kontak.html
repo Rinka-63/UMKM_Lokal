@@ -1,5 +1,6 @@
 <html>
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.2, maximum-scale=1.5">
   <title>Kontak - UMKM Rasa Lokal</title>
   <style>
     body {
@@ -155,33 +156,37 @@
     }
 
     /* Responsive for mobile */
-    @media (max-width: 700px) {
+       @media (max-width: 700px) {
       .header-bar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px 20px;
+        padding: 20px 25px;
       }
 
-      .navbar {
-        margin-top: 15px;
-        width: 100%;
+      .logo h1 {
+        font-size: 2.8em; /* diperbesar */
+      }
+
+      .logo p {
+        font-size: 1.2em; /* diperbesar */
       }
 
       .navbar a {
         display: inline-block;
-        margin: 5px 5px 0 0;
-        padding: 10px 14px;
-        font-size: 0.9em;
+        margin: 7px 7px 0 0;
+        padding: 14px 20px;
+        font-size: 1.1em; /* diperbesar */
       }
 
       main {
-        padding: 15px;
+        padding: 25px 20px;
         margin: 10px;
         max-width: 100%;
+        font-size: 1.2em; /* font utama diperbesar */
       }
 
       section {
-        padding: 20px 15px;
+        padding: 25px 20px;
         margin: 10px;
       }
 
@@ -189,13 +194,15 @@
       input[type="email"],
       textarea {
         max-width: 100%;
-        font-size: 1em;
+        font-size: 1.1em; /* input diperbesar */
+        padding: 12px;
       }
 
       input[type="submit"] {
         width: 100%;
         max-width: none;
-        font-size: 1em;
+        font-size: 1.3em; /* tombol submit diperbesar */
+        padding: 16px 0;
       }
 
       table, thead, tbody, th, td, tr {
@@ -212,34 +219,31 @@
       }
 
       tr {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 15px;
         box-sizing: border-box;
       }
 
       td {
         border: none;
-        padding-left: 50%;
+        padding-left: 55%;
         position: relative;
         text-align: left;
+        font-size: 1.1em; /* teks tabel diperbesar */
       }
 
       td::before {
-        position: absolute;
-        top: 10px;
+        top: 15px;
         left: 15px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
         font-weight: bold;
-        content: attr(data-label);
+        font-size: 1.1em;
       }
 
       footer {
-        font-size: 0.8em;
-        padding: 15px 10px;
+        font-size: 0.9em; /* footer diperbesar sedikit */
+        padding: 20px 15px;
       }
     }
   </style>

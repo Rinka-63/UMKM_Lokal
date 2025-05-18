@@ -88,29 +88,37 @@
       padding-bottom: 5px;
     }
 
-    .product-grid {
+    .product-list {
       display: flex;
+      flex-direction: column;
       gap: 20px;
-      overflow-x: auto;
-      padding: 10px 0;
+      margin-top: 20px;
     }
 
     .product-item {
-      min-width: 220px;
+      display: flex;
+      gap: 15px;
       background-color: #fafafa;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       padding: 15px;
-      flex-shrink: 0;
-      text-align: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .product-item img {
       width: 100px;
       height: auto;
       border-radius: 10px;
-      margin-bottom: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-info h4 {
+      margin: 0 0 5px;
     }
 
     footer {
@@ -140,42 +148,59 @@
 
 <section>
   <h2>Daftar Produk</h2>
-  <div class="product-grid">
+  <div class="product-list">
     <div class="product-item">
       <img src="keripik.jpg" alt="Keripik Singkong">
-      <h4>Keripik Singkong Pedas</h4>
-      <p>Renyah dan gurih dengan bumbu khas Nusantara</p>
-      <strong>Rp15.000</strong><br><small>Tersedia</small>
+      <div class="product-info">
+        <h4>Keripik Singkong Pedas</h4>
+        <p>Renyah dan gurih dengan bumbu khas Nusantara</p>
+        <strong>Rp15.000</strong><br><small>Tersedia</small>
+      </div>
     </div>
+
     <div class="product-item">
       <img src="dodol.jpg" alt="Dodol Mangga">
-      <h4>Dodol Mangga Asli</h4>
-      <p>Manis legit dari buah mangga segar tanpa pengawet</p>
-      <strong>Rp20.000</strong><br><small>Stok Terbatas</small>
+      <div class="product-info">
+        <h4>Dodol Mangga Asli</h4>
+        <p>Manis legit dari buah mangga segar tanpa pengawet</p>
+        <strong>Rp20.000</strong><br><small>Stok Terbatas</small>
+      </div>
     </div>
+
     <div class="product-item">
       <img src="kopi.jpg" alt="Kopi Robusta">
-      <h4>Kopi Bubuk Robusta</h4>
-      <p>Biji kopi pilihan dari pegunungan, ditumbuk manual</p>
-      <strong>Rp25.000</strong><br><small>Tersedia</small>
+      <div class="product-info">
+        <h4>Kopi Bubuk Robusta</h4>
+        <p>Biji kopi pilihan dari pegunungan, ditumbuk manual</p>
+        <strong>Rp25.000</strong><br><small>Tersedia</small>
+      </div>
     </div>
+
     <div class="product-item">
       <img src="abon.jpg" alt="Abon Sapi">
-      <h4>Abon Sapi Gurih</h4>
-      <p>Abon daging sapi premium, cocok untuk bekal & nasi hangat</p>
-      <strong>Rp30.000</strong><br><small>Tersedia</small>
+      <div class="product-info">
+        <h4>Abon Sapi Gurih</h4>
+        <p>Abon daging sapi premium, cocok untuk bekal & nasi hangat</p>
+        <strong>Rp30.000</strong><br><small>Tersedia</small>
+      </div>
     </div>
+
     <div class="product-item">
       <img src="kacang.jpg" alt="Kacang Bawang">
-      <h4>Kacang Bawang Renyah</h4>
-      <p>Kacang goreng dengan aroma bawang khas dan gurih</p>
-      <strong>Rp18.000</strong><br><small>Pre-Order</small>
+      <div class="product-info">
+        <h4>Kacang Bawang Renyah</h4>
+        <p>Kacang goreng dengan aroma bawang khas dan gurih</p>
+        <strong>Rp18.000</strong><br><small>Pre-Order</small>
+      </div>
     </div>
+
     <div class="product-item">
       <img src="serundeng.jpg" alt="Serundeng Kelapa">
-      <h4>Serundeng Kelapa</h4>
-      <p>Kelapa parut sangrai, cocok sebagai lauk pelengkap</p>
-      <strong>Rp10.000</strong><br><small>Tersedia</small>
+      <div class="product-info">
+        <h4>Serundeng Kelapa</h4>
+        <p>Kelapa parut sangrai, cocok sebagai lauk pelengkap</p>
+        <strong>Rp10.000</strong><br><small>Tersedia</small>
+      </div>
     </div>
   </div>
 </section>

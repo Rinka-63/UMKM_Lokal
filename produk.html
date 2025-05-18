@@ -8,12 +8,13 @@
       box-sizing: border-box;
     }
 
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f8f8;
       color: #333;
-      margin: 0;
-      padding: 0;
+      scroll-behavior: smooth;
     }
 
     .header-bar {
@@ -23,24 +24,24 @@
       padding: 40px 60px;
       background-color: white;
       flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .logo h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 3.5em;
       color: #009688;
     }
 
     .logo p {
-      font-size: 1.3em;
+      font-size: 1.4em;
       color: #666;
       margin-top: 6px;
     }
 
     .navbar {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      gap: 25px;
       margin-top: 20px;
     }
 
@@ -48,11 +49,12 @@
       text-decoration: none;
       background-color: #009688;
       color: #fff;
-      padding: 15px 30px;
-      border-radius: 10px;
+      padding: 18px 40px;
+      border-radius: 12px;
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1.4em;
       transition: background-color 0.3s ease;
+      white-space: nowrap;
     }
 
     .navbar a:hover {
@@ -63,30 +65,33 @@
       .header-bar {
         flex-direction: column;
         align-items: flex-start;
+        padding: 30px 20px;
       }
 
       .navbar {
-        justify-content: flex-start;
+        margin-top: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
       }
 
       .navbar a {
-        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1.2em;
       }
     }
 
     section {
-      padding: 40px;
-      margin: 30px auto;
+      padding: 60px 60px 80px; /* kasih ruang atas bawah supaya header/footer tidak nempel */
       max-width: 1150px;
+      margin: 0 auto;
       background-color: #ffffff;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      height: 90vh;
-      overflow-y: auto;
+      scroll-behavior: smooth;
     }
 
     h2 {
-      font-size: 2.8em;
+      font-size: 3em;
       color: #2c3e50;
       border-bottom: 4px solid #ddd;
       padding-bottom: 15px;
@@ -96,27 +101,28 @@
     .product-list {
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 80px;
       margin-top: 25px;
     }
 
     .product-item {
       display: flex;
-      gap: 40px;
+      gap: 60px;
       background-color: #fafafa;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      padding: 50px;
       align-items: center;
       flex-wrap: wrap;
     }
 
     .product-item img {
-      width: 280px;
+      width: 350px;
       height: auto;
-      border-radius: 15px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+      border-radius: 20px;
+      box-shadow: 0 7px 18px rgba(0,0,0,0.18);
       flex-shrink: 0;
+      object-fit: cover;
     }
 
     .product-info {
@@ -124,35 +130,37 @@
     }
 
     .product-info h4 {
-      font-size: 2.2em;
-      margin: 0 0 15px;
+      font-size: 2.8em;
+      margin: 0 0 20px;
     }
 
     .product-info p {
-      font-size: 1.6em;
-      margin: 10px 0 18px;
-      line-height: 1.4;
+      font-size: 1.9em;
+      margin: 15px 0 25px;
+      line-height: 1.5;
+      color: #444;
     }
 
     .product-info strong {
-      font-size: 1.9em;
+      font-size: 2.3em;
       color: #009688;
     }
 
     .product-info small {
-      font-size: 1.5em;
+      font-size: 1.8em;
       color: #888;
-      margin-left: 16px;
+      margin-left: 25px;
     }
 
     footer {
-      padding: 30px;
-      margin: 30px auto 0;
+      padding: 25px 0;
       background-color: #009688;
       text-align: center;
-      font-size: 1.1em;
+      font-size: 1.3em;
       color: #ffffff;
       border-top: 1px solid #eee;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+      margin-top: 50px;
     }
   </style>
 </head>

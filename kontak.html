@@ -197,49 +197,62 @@
         font-size: 1.1em; /* input diperbesar */
         padding: 12px;
       }
+ form label {
+    font-size: 1.3em; /* label form diperbesar */
+  }
 
-      input[type="submit"] {
-        width: 100%;
-        max-width: none;
-        font-size: 1.3em; /* tombol submit diperbesar */
-        padding: 16px 0;
-      }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1.2em; /* input form diperbesar */
+    padding: 14px;
+  }
 
-      table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-      }
+  input[type="submit"] {
+    font-size: 1.4em; /* tombol submit diperbesar */
+    padding: 18px 0;
+  }
 
-      table {
-        border: none;
-      }
+  /* Tabel daftar cabang */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
 
-      thead tr {
-        display: none;
-      }
+  thead tr {
+    display: none;
+  }
 
-      tr {
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 15px;
-        box-sizing: border-box;
-      }
+  tr {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-      td {
-        border: none;
-        padding-left: 55%;
-        position: relative;
-        text-align: left;
-        font-size: 1.1em; /* teks tabel diperbesar */
-      }
+  td {
+    font-size: 1.25em; /* teks isi tabel diperbesar */
+    padding-left: 55%;
+    position: relative;
+    text-align: left;
+  }
 
-      td::before {
-        top: 15px;
-        left: 15px;
-        font-weight: bold;
-        font-size: 1.1em;
-      }
+  td::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.25em; /* header pseudo elemen diperbesar */
+  }
+
+  /* Media sosial */
+  .social-links a {
+    font-size: 1.3em; /* link media sosial diperbesar */
+    margin-right: 20px;
+  }
 
       footer {
         font-size: 0.9em; /* footer diperbesar sedikit */

@@ -61,25 +61,36 @@
       background-color: #00796b;
     }
 
-    @media (max-width: 700px) {
-      .header-bar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 30px 20px;
-      }
+    @media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
-      .navbar {
-        margin-top: 15px;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
+  .logo {
+    margin-bottom: 15px;
+  }
 
-      .navbar a {
-        padding: 15px 25px;
-        font-size: 1.2em;
-      }
-    }
+  .navbar {
+    justify-content: flex-start;
+    flex-direction: row; /* tetap horizontal */
+    flex-wrap: nowrap;   /* tidak pindah baris */
+    overflow-x: auto;    /* bisa geser kalau sempit */
+    width: 100%;
+    gap: 10px;
+  }
 
+  .navbar a {
+    font-size: 1.2em;
+    white-space: nowrap; /* biar teksnya nggak turun */
+  }
+
+    footer {
+    font-size: 0.85em;
+    padding: 15px 10px;
+  }
+}
     section {
       padding: 60px 60px 80px; /* kasih ruang atas bawah supaya header/footer tidak nempel */
       max-width: 1150px;

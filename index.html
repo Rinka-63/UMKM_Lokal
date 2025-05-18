@@ -146,28 +146,24 @@
     /* ======== RESPONSIVE DESIGN ======== */
 
  @media (max-width: 768px) {
-  .header-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
+     .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
 
-  .logo {
-    margin-bottom: 15px;
-  }
+      .navbar {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
 
-  .navbar {
-    justify-content: flex-start;
-    flex-direction: row; /* tetap horizontal */
-    flex-wrap: nowrap;   /* tidak pindah baris */
-    overflow-x: auto;    /* bisa geser kalau sempit */
-    width: 100%;
-    gap: 10px;
-  }
-
-  .navbar a {
-    font-size: 1.2em;
-    white-space: nowrap; /* biar teksnya nggak turun */
+      .navbar a {
+        margin-left: 0;
+        padding: 12px 20px;
+        font-size: 1em;
+      }
 
           footer {
         padding: 20px;

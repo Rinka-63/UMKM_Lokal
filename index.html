@@ -39,7 +39,9 @@
 
 .navbar {
   display: flex;
+  flex-direction: row; /* tetap horizontal */
   gap: 12px;
+  flex-wrap: nowrap;
 }
 
 .navbar a {
@@ -56,7 +58,6 @@
 .navbar a:hover {
   background-color: #00796b;
 }
-
     h2 {
       color: #2c3e50;
       border-bottom: 2px solid #ddd;
@@ -154,7 +155,7 @@
     }
 
     /* ======== RESPONSIVE DESIGN ======== */
-    @media (max-width: 700px) {
+
  @media (max-width: 768px) {
   .header-bar {
     flex-direction: column;
@@ -167,37 +168,19 @@
   }
 
   .navbar {
+    justify-content: flex-start;
     flex-direction: row; /* tetap horizontal */
-    flex-wrap: wrap;     /* boleh turun ke bawah jika sempit */
+    flex-wrap: nowrap;   /* tidak pindah baris */
+    overflow-x: auto;    /* bisa geser kalau sempit */
+    width: 100%;
     gap: 10px;
   }
 
   .navbar a {
     font-size: 1.2em;
-    padding: 10px 18px;
+    white-space: nowrap; /* biar teksnya nggak turun */
   }
 }
-
-
-      section, main {
-        padding: 20px;
-        margin: 5px 15px;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .product-item img {
-        max-height: 160px;
-      }
-
-      button {
-        width: 100%;
-        font-size: 1.1em;
-        padding: 14px 0;
-      }
-    }
   </style>
 </head>
 <body>

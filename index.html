@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beranda - UMKM Rasa Lokal</title>
   <style>
     * {
@@ -14,28 +17,28 @@
       color: #333;
     }
 
-  .header-bar {
+    .header-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
       background-color: white;
       flex-wrap: wrap;
-  }
+    }
 
-  .logo h1 {
+    .logo h1 {
       margin: 0;
       font-size: 2em;
       color: #009688;
-  }
+    }
 
-  .logo p {
+    .logo p {
       font-size: 1em;
       color: #666;
       margin-top: 4px;
-  }
+    }
 
-  .navbar a {
+    .navbar a {
       text-decoration: none;
       background-color: #009688;
       color: #fff;
@@ -44,27 +47,11 @@
       border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s ease;
-  }
+    }
 
-  .navbar a:hover {
+    .navbar a:hover {
       background-color: #00796b;
-  }
-
-  @media (max-width: 700px) {
-    .header-bar {
-      flex-direction: column;
-      align-items: flex-start;
     }
-
-    .navbar {
-      margin-top: 15px;
-    }
-
-    .navbar a {
-      display: inline-block;
-      margin: 5px 5px 0 0;
-    }
-  }
 
     h2 {
       color: #2c3e50;
@@ -87,7 +74,6 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       color: #333;
     }
-
 
     p, ul, blockquote {
       margin-top: 10px;
@@ -161,12 +147,76 @@
       font-size: 0.9em;
       color: #ffffff;
       border-top: 1px solid #eee;
-
     }
 
-    @media (max-width: 600px) {
-      nav {
-        font-size: 1em;
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      section,
+      main {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .logo h1 {
+        font-size: 1.5em;
+      }
+
+      .logo p {
+        font-size: 0.95em;
+      }
+
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .navbar a {
+        padding: 8px 14px;
+        font-size: 0.95em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      .product-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px;
+        padding-bottom: 10px;
+      }
+
+      .product-item {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        margin-right: 10px;
+      }
+
+      .product-item img {
+        max-height: 160px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      footer {
+        font-size: 0.85em;
+        padding: 15px;
       }
     }
   </style>
@@ -185,7 +235,6 @@
     <a href="kontak.html">Kontak</a>
   </nav>
 </header>
-
 
 <!-- SECTION 1: TENTANG -->
 <section>

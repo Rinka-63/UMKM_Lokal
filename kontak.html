@@ -232,20 +232,22 @@
   }
 
   td {
-    font-size: 1.25em; /* teks isi tabel diperbesar */
-    padding-left: 55%;
+   font-size: 1.25em;
+    padding-left: 50%; /* dikurangi sedikit dari 55% */
+    padding-right: 15px; /* tambah padding kanan */
     position: relative;
     text-align: left;
+    box-sizing: border-box; /
   }
 
   td::before {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 15px; /* dikurangi sedikit agar lebih masuk */
     width: 45%;
     white-space: nowrap;
     font-weight: bold;
-    font-size: 1.25em; /* header pseudo elemen diperbesar */
+    font-size: 1.25em; header pseudo elemen diperbesar */
   }
 
   /* Media sosial */

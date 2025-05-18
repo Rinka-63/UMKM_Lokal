@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Produk - UMKM Rasa Lokal</title>
   <style>
     * {
@@ -81,6 +81,8 @@
       background-color: #ffffff;
       border-radius: 12px;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      height: 90vh; /* tinggi container */
+      overflow-y: auto; /* scroll vertikal jika isi lebih */
     }
 
     h2 {
@@ -93,26 +95,27 @@
     .product-list {
       display: flex;
       flex-direction: column;
-      gap: 25px;
+      gap: 40px;
       margin-top: 25px;
     }
 
     .product-item {
       display: flex;
-      gap: 20px;
+      gap: 30px;
       background-color: #fafafa;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      padding: 20px;
+      padding: 30px;
       align-items: center;
       flex-wrap: wrap;
     }
 
     .product-item img {
-      width: 130px;
+      width: 200px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+      flex-shrink: 0;
     }
 
     .product-info {
@@ -120,23 +123,24 @@
     }
 
     .product-info h4 {
-      font-size: 1.4em;
-      margin: 0 0 5px;
+      font-size: 1.8em;
+      margin: 0 0 10px;
     }
 
     .product-info p {
-      font-size: 1.1em;
-      margin: 5px 0;
+      font-size: 1.3em;
+      margin: 8px 0;
     }
 
     .product-info strong {
-      font-size: 1.2em;
+      font-size: 1.5em;
       color: #009688;
     }
 
     .product-info small {
-      font-size: 1em;
+      font-size: 1.2em;
       color: #888;
+      margin-left: 12px;
     }
 
     footer {
@@ -172,7 +176,7 @@
       <div class="product-info">
         <h4>Keripik Singkong Pedas</h4>
         <p>Renyah dan gurih dengan bumbu khas Nusantara</p>
-        <strong>Rp15.000</strong><br><small>Tersedia</small>
+        <strong>Rp15.000</strong><small>Tersedia</small>
       </div>
     </div>
 
@@ -181,7 +185,7 @@
       <div class="product-info">
         <h4>Dodol Mangga Asli</h4>
         <p>Manis legit dari buah mangga segar tanpa pengawet</p>
-        <strong>Rp20.000</strong><br><small>Stok Terbatas</small>
+        <strong>Rp20.000</strong><small>Stok Terbatas</small>
       </div>
     </div>
 
@@ -190,7 +194,7 @@
       <div class="product-info">
         <h4>Kopi Bubuk Robusta</h4>
         <p>Biji kopi pilihan dari pegunungan, ditumbuk manual</p>
-        <strong>Rp25.000</strong><br><small>Tersedia</small>
+        <strong>Rp25.000</strong><small>Tersedia</small>
       </div>
     </div>
 
@@ -199,7 +203,7 @@
       <div class="product-info">
         <h4>Abon Sapi Gurih</h4>
         <p>Abon daging sapi premium, cocok untuk bekal & nasi hangat</p>
-        <strong>Rp30.000</strong><br><small>Tersedia</small>
+        <strong>Rp30.000</strong><small>Tersedia</small>
       </div>
     </div>
 
@@ -208,7 +212,7 @@
       <div class="product-info">
         <h4>Kacang Bawang Renyah</h4>
         <p>Kacang goreng dengan aroma bawang khas dan gurih</p>
-        <strong>Rp18.000</strong><br><small>Pre-Order</small>
+        <strong>Rp18.000</strong><small>Pre-Order</small>
       </div>
     </div>
 
@@ -217,7 +221,7 @@
       <div class="product-info">
         <h4>Serundeng Kelapa</h4>
         <p>Kelapa parut sangrai, cocok sebagai lauk pelengkap</p>
-        <strong>Rp10.000</strong><br><small>Tersedia</small>
+        <strong>Rp10.000</strong><small>Tersedia</small>
       </div>
     </div>
   </div>
